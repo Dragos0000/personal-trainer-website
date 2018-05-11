@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Basic Page Needs -->
+        <meta charset="utf-8">
+        <title>TADAS | Personal trainer</title>
+        <!-- Favicons-->
+        <link rel="shortcut icon" href="img/dumbell-icon-57x57.png" type="image/x-icon"/>
+        <link rel="apple-touch-icon" type="image/x-icon" href="img/dumbell-icon-57x57.png">
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.css" rel="stylesheet" >
+        <link href="css/socialize-bookmarks.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen">
+        <!-- Google web font -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-3"><h1 id="logo"><a href="index.html" title="Tadas - Personal Trainer">Tadas - Personal Trainer</a></h1></div>
+    
+                    <nav class="col-md-8 col-xs-9">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="navbar-collapse collapse" id="navbar">
+                                <ul class="nav navbar-nav navbar-right" id="main-nav" >
+                                    <li><a href="index.html">Profile</a></li>
+                                    <li><a href="training-programs.html">Training</a></li>
+                                    <li><a href="img-galleries.html">Images</a></li>
+                                    <li><a href="media.html">Videos</a></li>
+                                    <li><a href="blog_post.html">Blog</a></li>
+                                    <li><a href="contact.html">Contact me</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div><!-- End container -->
+        </header> <!-- End header -->
+        <section class="container">
+        	<div id="map"></div><!-- end map-->
+            <h3 class="title">Fell free to contact me</h3>
+            <div class="row">
+            	<div class="col-xs-12 col-md-8 col-md-offset-2">       
+                	<div id="message-contact"></div>
+					<form id="contactform">
+						<div class="form-bg-1"><input type="text" class="form-control" id="name_contact" placeholder="Your Name"></div>
+                        <div class="form-bg-2"><input type="text" class="form-control"  id="lastname_contact" placeholder="Your Last name"></div>
+                        <div class="form-bg-1"><input type="email" class="form-control"  id="email_contact" placeholder="Your Email"></div>
+                        <div class="form-bg-2"><input type="text" class="form-control"  id="phone_contact" placeholder="Your Phone number"></div>
+						<div class="form-bg-2"><textarea rows="5" id="message_contact" class=" form-control" placeholder="Your Message"></textarea></div>
+						<input type="submit" id="submit-contact" value="Submit" class=" button_medium add_top_30">
+					</form>
+                </div>
+            </div><!-- End row -->
+        </section> <!-- End section -->
+        <!-- Start of footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Contact</h5>
+                        <p>
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
+                        </p>
+                        <ul>
+                            <li><i class="icon-user"></i> Tadas Burbulys </li>
+                            <li><i class="icon-phone"></i> Telephone: 0754961137559 </li>
+                            <li><i class="icon-envelope"></i> Email: <a href="#">info@gmail.com </a></li>
+                        </ul>
+                        <ul class="social-bookmarks clearfix">
+                            <li class="linkedin"><a href="#">linkedin</a></li>
+                            <li class="facebook"><a href="#">facebook</a></li>
+                            <li class="youtube"><a href="#">youtube</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/footer.png" alt="weightlifter" class="img-responsive footer-img">
+                    </div>
+                </div>
+            </div>
+            <div id="copy">© 2018 - All Rights Reserved
+            <img src="img/footer-logo.png" alt="website maker logo" class="img-responsive maker-logo">
+            </div>
+        </footer><!-- End footer -->
+        <div id="toTop">Back to Top</div>  
+        <!-- Jquery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- FLEXSLIDER -->  
+        <script src="js/jquery.flexslider.js"></script> 
+        <script src="js/jquery.flexslider.load.js"></script> 
+        <!-- OTHER JS --> 
+        <script src="js/bootstrap.js"></script>
+        <script src="js/functions.js"></script>
+        <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: {
+                    lat: 53.943799,
+                    lng: -1.056129
+                }
+            });
+        }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
+    </body>
+</html>
